@@ -4,15 +4,24 @@ body {
   color:rgb(55, 170, 86);
 }
 
+p::first-letter {
+    text-transform: uppercase;
+}
+
 .generated-text {
 background-color:rgb(55, 170, 86);
 color: white;
 margin: 0 auto;
-width: 1000px;
-background-color: rgb(55, 170, 86);
+width: 800px;
 border-radius: 3px;
 padding: 8px 8px 8px 8px;
 }
+
+.generated-text:empty {
+ display: none;
+ background-color:rgb(240, 245, 241);
+}
+
 
 .title, .description, form {
   text-align: center;
@@ -118,19 +127,4 @@ padding: 8px 8px 8px 8px;
     transition: transform 0s;
 }
 
-/* Disabled */
-.generate-button:disabled {
-    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
-    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
-    box-shadow: none;
-    cursor: initial;
-}
-
-.generate-button:disabled::before {
-    opacity: 0;
-}
-
-.generate-button:disabled::after {
-    opacity: 0;
-}
 }
