@@ -6,10 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": "lorem ipsum",
+  "author": "Courtney von Nieda",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "engines": {
+    "node": "11.3.0"
   }
 }
